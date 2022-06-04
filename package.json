@@ -1,0 +1,28 @@
+{
+  "name": "native-utils",
+  "description": "Various cross platform system utils",
+  "scripts": {
+    "build": "node-gyp -j 16 build",
+    "build:js": "tsc",
+    "watch": "tsc -w",
+    "rebuild:debug": "node-gyp -j 16 rebuild --debug",
+    "configure": "node-gyp configure",
+    "clean": "node-gyp clean"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/morethanyouknowltd/native-utils",
+  "author": "More Than You Know",
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api-helper": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.39",
+    "node-addon-api": "^5.0.0",
+    "node-gyp": "^9.0.0",
+    "prettier": "^2.6.2",
+    "typescript": "^4.7.3"
+  },
+  "gypfile": true,
+  "version": "0.0.15"
+}
